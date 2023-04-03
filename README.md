@@ -7,7 +7,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 
 * Fitur dan Fungsionslitas
-Pada bagian admin, terdapat 8 fitur. Yang pertama adalah fitur
+Pada bagian admin, terdapat 8 fitur. Yang pertama adalah fitur tampilkan data, yang dapat digunakan oleh admin untuk menampilkan data yang ada. Kedua, fitur mengurutkan jadwal, digunakan oleh admin untuk melihat data sesuai dengan urutan yang diinginkan. Contohnya seperti menampilkan data sesuai urutan dari tabel jam secara ascending. Ketiga, fitur tambahkan data di awal, digunakan oleh admin untuk menambahkan data di awal. Keempat, fitur tambahkan data di akhir, digunakan oleh admin untuk menambahkan data di akhir. Kelima, fitur perbaiki data, digunakan oleh admin untuk memperbaiki data jika ada data yang salah atau jika memang ingin memperbarui data yang sudah ada. Keenam, fitur hapus data, digunakan oleh admin untuk menghapus data yang ada. Ketujuh, fitur histori, digunakan oleh admin untuk melihat riwayat aktifitas yang dilakukan oleh admin ketika menambahkan, menghapus, dan memperbarui data.
 
 
 * Cara Penggunaan
