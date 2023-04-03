@@ -7,6 +7,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 
 * Fitur dan Fungsionslitas
+Pada bagian admin, terdapat 8 fitur. Yang pertama adalah fitur
 
 
 * Cara Penggunaan
