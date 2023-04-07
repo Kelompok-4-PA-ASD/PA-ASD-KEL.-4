@@ -666,7 +666,7 @@ def starting():
         name = input('Nama lengkap\t: ')
         username = input('Username baru\t: ')
         pin = input('Password baru\t: ')
-        if username in data_login and data_login[username]["nama"] == name:
+        if username in data_login:
             print(f"Akun '{username}' sudah tersedia.")
         else:
             if priv == 1:
