@@ -228,15 +228,27 @@ class linkedList:
             return current_item
     
 mylist = linkedList()
-mylist.addFirst('18:00','JAKARTA','KA123',221)
-mylist.addEnd('09:30','SURABAYA','KA456',142)
-mylist.addEnd('14:45','YOGYAKARTA','KA789',52)
-mylist.addEnd('12:15','BANDUNG','KA321',341)
-mylist.addEnd('18:30','SOLO','KA654',122)
-mylist.addEnd('10:45','MALANG','KA987',194)
-mylist.addEnd('16:00','SURABAYA','KA135',123)
-mylist.addEnd('19:30','JAKARTA','KA246',129)
-mylist.addEnd('13:00','BANDUNG','KA753',172)
+mylist.addFirst('07:30','BANDUNG', 'KA111', 299)
+mylist.addEnd('08:45', 'YOGYAKARTA', 'KA222', 202)
+mylist.addEnd('10:00', 'SURABAYA', 'KA333', 250)
+mylist.addEnd('11:15', 'SEMARANG', 'KA444', 150)
+mylist.addEnd('13:30', 'MALANG', 'KA555', 209)
+mylist.addEnd('15:45', 'SOLO', 'KA666', 181)
+mylist.addEnd('16:30', 'DENPASAR', 'KA777', 134)
+mylist.addEnd('18:45', 'PEKALONGAN', 'KA888', 100)
+mylist.addEnd('19:30', 'KEDIRI', 'KA999', 120)
+mylist.addEnd('21:00', 'CIREBON', 'KA123', 150)
+mylist.addEnd('08:15', 'BANDUNG', 'KA246', 80)
+mylist.addEnd('09:45', 'PURWOKERTO', 'KA357', 112)
+mylist.addEnd('12:00', 'YOGYAKARTA', 'KA468', 100)
+mylist.addEnd('13:15', 'SOLO', 'KA579', 150)
+mylist.addEnd('15:30', 'PURWOREJO', 'KA680', 80)
+mylist.addEnd('17:45', 'KEBUMEN', 'KA791', 84)
+mylist.addEnd('18:30', 'BANDUNG', 'KA802', 142)
+mylist.addEnd('20:45', 'MAGELANG', 'KA913', 153)
+mylist.addEnd('22:00', 'SUYABAYA', 'KA024', 73)
+mylist.addEnd('23:15', 'SURABAYA', 'KA135', 77)
+
 
 def Q(menu):
     tanya = input('\nKe menu utama? [y/t]: ').lower()
@@ -261,7 +273,7 @@ def admin():
     os.system('cls')
     print(f"\nSelamat Datang, {namaUsr}({nim})")
     print('+-----------------------------------+')
-    print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+    print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
     print('+-----------------------------------+')
     print('|     [1] Tampilkan Jadwal          |')
     print('|     [2] Mengurutkan Jadwal        |')
@@ -475,7 +487,9 @@ def admin():
             print("Memproses...")
             time.sleep(0.5)
             os.system('cls')
-            print('        MEMPERBARUI JUMLAH PENUMPANG')
+            print('+-----------------------------------------------------+')
+            print('|            MEMPERBARUI JUMLAH PENUMPANG             |')
+            print('+-----------------------------------------------------+')
             mylist.view()
             while True:
                 while True:
@@ -533,7 +547,7 @@ def User():
     os.system('cls')
     print(f"\nSelamat Datang, {namaUsr}")
     print('+-----------------------------------+')
-    print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+    print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
     print('+-----------------------------------+')
     print('|     [1] Tampilkan Jadwal          |')
     print('|     [2] Mengurutkan Jadwal        |')
@@ -667,7 +681,7 @@ def starting():
         username = input('Username baru\t: ')
         pin = input('Password baru\t: ')
         if username in data_login:
-            print(f"Akun '{username}' sudah tersedia.")
+            print(f"Akun '{username}' telah digunakan.")
         else:
             if priv == 1:
                 nim = input('No. Pegawai\t: ')
@@ -684,7 +698,7 @@ def starting():
     def masuk():
         os.system('cls')
         print('+-----------------------------------+')
-        print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+        print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
         print('+-----------------------------------+')
         print('|       [1] Log-In                  |')
         print('|       [2] Buat Akun Baru          |')
@@ -701,7 +715,7 @@ def starting():
         elif ask == "2":
             os.system('cls')
             print('+-----------------------------------+')
-            print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+            print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
             print('+-----------------------------------+')
             print('|    Membuat akun baru sebagai:     |')
             print('|        [1] Admin                  |')
