@@ -127,8 +127,8 @@ class linkedList:
                 if temp is None:
                     break
                 temp = temp.next
-            self.history.append(f'Mengahapus | {temp.jam} | {temp.tujuan} | {temp.nomor} | dari tabel')
-            print(f'Menghapus | {temp.jam} | {temp.tujuan} | {temp.nomor} | \n')
+            self.history.append(f'Mengahapus | {temp.jam} | {temp.tujuan} | {temp.nomor} | {temp.penumpang} | dari tabel')
+            print(f'Menghapus | {temp.jam} | {temp.tujuan} | {temp.nomor} | {temp.penumpang} | \n')
             if temp is None:
                 return 0
             if temp.next is not None:
