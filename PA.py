@@ -4,10 +4,11 @@ import math
 import time
 import pwinput
 from prettytable import PrettyTable
-os.system('cls')
 
+os.system('cls')
 tabel = PrettyTable()
 tabel.field_names = ["No.","Jam","Tujuan","Nomor Kereta","Penumpang"]
+tabel.align = "l"
 
 class Node:
     def __init__(self,jam,tujuan,nomor,penumpang, nextNode = None, prevNode = None):
@@ -244,13 +245,13 @@ class linkedList:
             return current_item
     
 mylist = linkedList()
-mylist.addFirst('07:30','BANDUNG', 'KA111', 299)
-mylist.addEnd('08:45', 'YOGYAKARTA', 'KA222', 202)
-mylist.addEnd('10:00', 'SURABAYA', 'KA333', 250)
-mylist.addEnd('11:15', 'SEMARANG', 'KA444', 150)
-mylist.addEnd('13:30', 'MALANG', 'KA555', 209)
-mylist.addEnd('15:45', 'SOLO', 'KA666', 181)
-mylist.addEnd('16:30', 'DENPASAR', 'KA777', 134)
+mylist.addFirst('07:30','BANDUNG', 'KA141', 299)
+mylist.addEnd('08:45', 'YOGYAKARTA', 'KA352', 202)
+mylist.addEnd('10:00', 'SURABAYA', 'KA613', 250)
+mylist.addEnd('11:15', 'SEMARANG', 'KA924', 150)
+mylist.addEnd('13:30', 'MALANG', 'KA585', 209)
+mylist.addEnd('15:45', 'SOLO', 'KA652', 181)
+mylist.addEnd('16:30', 'DENPASAR', 'KA687', 134)
 mylist.addEnd('18:45', 'PEKALONGAN', 'KA888', 100)
 mylist.addEnd('19:30', 'KEDIRI', 'KA999', 120)
 mylist.addEnd('21:00', 'CIREBON', 'KA123', 150)
@@ -337,23 +338,22 @@ def admin():
             print('+-----------------------------------------------------+')
             print('|             MENGURUTKAN BERDASARKAN JAM             |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,1)
+            mylist.sortAndPrint(1)
         if ask == '2':
             print('+-----------------------------------------------------+')
             print('|           MENGURUTKAN BERDASARKAN TUJUAN            |') 
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,2)
+            mylist.sortAndPrint(2)
         if ask == '3':
             print('+-----------------------------------------------------+')
             print('|         MENGURUTKAN BERDASARKAN NOMOR KERETA        |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,3)
+            mylist.sortAndPrint(3)
         if ask == '4': 
             print('+-----------------------------------------------------+')
             print('|          MENGURUTKAN BERDASARKAN PENUMPANG          |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,4)
-        mylist.view()
+            mylist.sortAndPrint(4)
 
     elif ask == '3':
         print("Memproses...")
@@ -605,23 +605,22 @@ def User():
             print('+-----------------------------------------------------+')
             print('|             MENGURUTKAN BERDASARKAN JAM             |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,1)
+            mylist.sortAndPrint(1)
         if ask == '2':
             print('+-----------------------------------------------------+')
             print('|           MENGURUTKAN BERDASARKAN TUJUAN            |') 
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,2)
+            mylist.sortAndPrint(2)
         if ask == '3':
             print('+-----------------------------------------------------+')
             print('|         MENGURUTKAN BERDASARKAN NOMOR KERETA        |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,3)
+            mylist.sortAndPrint(3)
         if ask == '4': 
             print('+-----------------------------------------------------+')
             print('|          MENGURUTKAN BERDASARKAN PENUMPANG          |')
             print('+-----------------------------------------------------+')
-            mylist.head = mylist.mergeSort(mylist.head,4)
-        mylist.view()
+            mylist.sortAndPrint(4)  
 
     elif ask == '3':
         print("Memproses...")
