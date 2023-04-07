@@ -110,6 +110,8 @@ class linkedList:
             return 0
         
     def delete(self, position):
+            if position > mylist.length() or position <= 0:
+                return 0
             if self.head is None:
                 print('+-----------------------------------------------------+')
                 print('|                    JADWAL KOSONG                    |')
@@ -137,7 +139,6 @@ class linkedList:
             time.sleep(0.5)
             return 1
 
-    
     def mergeSort(self, head,elemen):
         if not head or not head.next:
             return head
