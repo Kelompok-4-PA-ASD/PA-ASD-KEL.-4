@@ -1,0 +1,25 @@
+{
+  "nabil46": {
+    "nama": "Muhammad Nabil",
+    "pin": "4646",
+    "nim": "2209116046",
+    "priv": 1
+  },
+  "dian22": {
+    "nama": "Muhammad Dian Nurdiansyah",
+    "pin": "2222",
+    "nim": "2209116022",
+    "priv": 1
+  },
+  "mita17": {
+    "nama": "Mita Wahyu Astami",
+    "pin": "1717",
+    "nim": "2209116017",
+    "priv": 1
+  },
+  "user1": {
+    "nama": "Abdul Faiz Tejo",
+    "pin": "1212",
+    "priv": 2
+  }
+}
