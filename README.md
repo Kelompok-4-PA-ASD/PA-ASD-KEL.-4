@@ -30,12 +30,12 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![searching](https://user-images.githubusercontent.com/125839542/230532043-b2ffe1fd-828b-4338-ad7c-824a6c4ad437.png)
 
 * **INISIALISASI CLASS**
-![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
+* ![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
 
 
 ### LOG-IN
 * **1.MEMBUKAN FILE JSON**
-![inisialisai json](https://user-images.githubusercontent.com/125839542/230533296-1d320f2c-b428-4266-88e5-f84c27fd4ad2.png)
+* ![inisialisai json](https://user-images.githubusercontent.com/125839542/230533296-1d320f2c-b428-4266-88e5-f84c27fd4ad2.png)
 
 * **2.MENU AWAL**
 ![starter](https://user-images.githubusercontent.com/125839542/230533476-8878eeef-8f14-4cb1-80e6-04a92c775157.png)
@@ -47,7 +47,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![addusr](https://user-images.githubusercontent.com/125839542/230533565-95ef3c66-cb9c-4e2f-b0dd-5d571fc52f41.png)
 
 * **5.FILE JSON**
-![isi json](https://user-images.githubusercontent.com/125839542/230534150-563c1766-013d-41d8-9b8d-16bc9ea05fa9.png)
+* ![isi json](https://user-images.githubusercontent.com/125839542/230534150-563c1766-013d-41d8-9b8d-16bc9ea05fa9.png)
 
 
 
