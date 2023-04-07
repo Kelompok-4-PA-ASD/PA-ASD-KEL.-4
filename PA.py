@@ -256,7 +256,7 @@ def Q(menu):
         x = 50*"-"
         print(x,"TERIMA KASIH",x)
         exit()
-
+        
 def admin():
     os.system('cls')
     print(f"\nSelamat Datang, {namaUsr}({nim})")
@@ -528,3 +528,105 @@ def admin():
         print(x,"TERIMA KASIH",x)
         exit()
     Q(1)
+    
+def User():
+    os.system('cls')
+    print(f"\nSelamat Datang, {namaUsr}")
+    print('+-----------------------------------+')
+    print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+    print('+-----------------------------------+')
+    print('|     [1] Tampilkan Jadwal          |')
+    print('|     [2] Mengurutkan Jadwal        |')
+    print('|     [3] Mencari Tujuan            |')
+    print('|     [4] Keluar                    |')
+    print('+-----------------------------------+')
+    ask = input('Pilih: ')
+    while ask not in ['1','2','3','4']:
+        print('Pilih dari pilihan yang tersedia')
+        ask = input('Pilih: ')
+
+    if ask == '1':
+        print("Memproses...")
+        time.sleep(0.5)
+        os.system('cls')
+        print('+-----------------------------------------------------+')
+        print('|            JADWAL KEBERANGKATAN KERETA              |')
+        print('+-----------------------------------------------------+')
+        mylist.view()
+    
+    elif ask == '2':
+        print("Memproses...")
+        time.sleep(0.5)
+        os.system('cls')
+        print('+---------------------------------------+')
+        print('|       MENGURUTKAN JADWAL KERETA       |')
+        print('+---------------------------------------+')
+        print('|    Jadwal Diurutkan berdasarkan :     |')
+        print('|    [1] Jam Keberangkatan              |')
+        print('|    [2] Tujuan Keberangkatan           |')
+        print('|    [3] Nomor Kereta                   |')
+        print('|    [4] Jumlah Penumpang               |')
+        print('+---------------------------------------+')
+        ask = input("Pilih: ")
+        while ask not in ['1','2','3','4']:
+            print("Pilih dari pilihan yang tersedia, mohon coba lagi")
+            ask = input("Pilih: ")
+        if ask == '1':
+            print('+-----------------------------------------------------+')
+            print('|             MENGURUTKAN BERDASARKAN JAM             |')
+            print('+-----------------------------------------------------+')
+            mylist.head = mylist.mergeSort(mylist.head,1)
+        if ask == '2':
+            print('+-----------------------------------------------------+')
+            print('|           MENGURUTKAN BERDASARKAN TUJUAN            |') 
+            print('+-----------------------------------------------------+')
+            mylist.head = mylist.mergeSort(mylist.head,2)
+        if ask == '3':
+            print('+-----------------------------------------------------+')
+            print('|         MENGURUTKAN BERDASARKAN NOMOR KERETA        |')
+            print('+-----------------------------------------------------+')
+            mylist.head = mylist.mergeSort(mylist.head,3)
+        if ask == '4': 
+            print('+-----------------------------------------------------+')
+            print('|          MENGURUTKAN BERDASARKAN PENUMPANG          |')
+            print('+-----------------------------------------------------+')
+            mylist.head = mylist.mergeSort(mylist.head,4)
+        mylist.view()
+
+    elif ask == '3':
+        print("Memproses...")
+        time.sleep(0.5)
+        os.system('cls') 
+        print('+---------------------------------------------+')
+        print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+        print('+---------------------------------------------+')
+        cari = input("Masukan Kota Tujuan : ").upper()
+        result = mylist.jumpSearch(cari)
+
+        if result == None:
+            print("Mencari..")
+            time.sleep(0.5)
+            os.system('cls')
+            print('+---------------------------------------------+')
+            print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+            print('+---------------------------------------------+')
+            print(f"\n'{cari}' tidak ditemukan, mohon coba lagi")
+
+        else:
+            print("Mencari..")
+            time.sleep(0.5)
+            os.system('cls')
+            print('+---------------------------------------------+')
+            print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+            print('+---------------------------------------------+')
+            print(f"Hasil Pencarian '{cari}':")
+            print(result)
+
+    elif ask == '4':
+        print("Memproses...")
+        time.sleep(0.5)
+        x = 50*"-"
+        print(x,"TERIMA KASIH",x)
+        exit()
+
+    Q(2)
