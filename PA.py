@@ -256,7 +256,7 @@ def Q(menu):
         x = 50*"-"
         print(x,"TERIMA KASIH",x)
         exit()
-        
+
 def admin():
     os.system('cls')
     print(f"\nSelamat Datang, {namaUsr}({nim})")
@@ -528,7 +528,7 @@ def admin():
         print(x,"TERIMA KASIH",x)
         exit()
     Q(1)
-    
+
 def User():
     os.system('cls')
     print(f"\nSelamat Datang, {namaUsr}")
@@ -629,8 +629,8 @@ def User():
         print(x,"TERIMA KASIH",x)
         exit()
 
-    Q(2)
-    
+    Q(2)
+
 def starting():
     with open('LogInfo.json') as file:
         data_login = json.load(file)
@@ -647,6 +647,7 @@ def starting():
 
         if usr in data_login and data_login[usr]["pin"] == pin:
             print("Log-In Berhasil")
+            time.sleep(0.5)
             namaUsr = data_login[usr]["nama"]
             if data_login[usr]["priv"] == 1:
                 nim = data_login[usr]["nim"]
@@ -654,7 +655,7 @@ def starting():
             if data_login[usr]["priv"] == 2:
                 User()
         else:
-            print("\nUsername atau Password salah, Mohon coba lagi")
+            print("Username atau Password salah, Mohon coba lagi")
             Q(3)
 
     def addUsr(priv):
@@ -716,5 +717,5 @@ def starting():
         elif tany == '2':
             addUsr(2)
     
-    Q(3)
+    Q(3)
 starting()
