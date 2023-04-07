@@ -31,7 +31,6 @@ class linkedList:
             pointer = pointer.next
         return length
 
-    
     def view(self):
         if self.head == None:
             print('+-----------------------------------------------------+')
