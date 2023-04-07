@@ -1,6 +1,8 @@
 import os
+import json
 import math
 import time
+import pwinput
 from prettytable import PrettyTable
 os.system('cls')
 
@@ -35,7 +37,7 @@ class linkedList:
             print('+-----------------------------------------------------+')
             print('|                    JADWAL KOSONG                    |')
             print('+-----------------------------------------------------+')
-            Q()
+            Q(1)
         else:
             kolom = mylist.head
             tabel.clear_rows()
@@ -182,35 +184,49 @@ class linkedList:
             result = right
             result.next = self.merge(left, right.next,elemen)
         return result
-    
-    def jump_search_task(self, description):
-        n = 0
-        current = self.head
-        while current:
-            n += 1
-            current = current.next
-
+        
+    def jumpSearch(self, tujuan):
+        found = False
+        z = None
+        x = tujuan
+        n = self.length()
         step = int(math.sqrt(n))
-        prev = None
-        current = self.head
-        while current and current.tujuan < description:
-            prev = current
-            for i in range(step):
-                current = current.next
-                if not current:
-                    break
+        p = None
+        current_item = mylist.head
+        if found == False:
+                while current_item:
+                    if tujuan in current_item.tujuan:
+                        if not found:
+                            z = PrettyTable()
+                            z.field_names = ["Tujuan", "Jam","Nomor Kereta","Penumpang"]
+                        found = True
+                        z.add_row([current_item.tujuan,current_item.jam,current_item.nomor,current_item.penumpang])
+                    current_item = current_item.next
+                if z:
+                    return z
+                else:
+                    return None
+        while current_item and current_item.tujuan.lower() < x.lower():
+            p = current_item
+            i = 0
+            while i < min(step, n) and current_item:
+                current_item = current_item.next
+                i += 1
+            if not current_item:
+                return None
 
-        if prev and prev.tujuan == description:
-            print(prev.jam, prev.tujuan, prev.nomor, prev.penumpang)
-            # return prev
-            
-        elif current and current.tujuan == description:
-            print(current.jam, current.tujuan, current.nomor, current.penumpang)
-            # return current
-        else:
-            return None
-        
-        
+        while current_item and current_item.tujuan.lower() > x.lower():
+            p = current_item.prev
+            i = 0
+            while i < min(step, n) and current_item:
+                current_item = current_item.prev
+                i += 1
+            if not current_item:
+                return None
+
+        if current_item.tujuan.lower() == x.lower():
+            return current_item
+    
 mylist = linkedList()
 mylist.addFirst('18:00','JAKARTA','KA123',221)
 mylist.addEnd('09:30','SURABAYA','KA456',142)
@@ -219,38 +235,47 @@ mylist.addEnd('12:15','BANDUNG','KA321',341)
 mylist.addEnd('18:30','SOLO','KA654',122)
 mylist.addEnd('10:45','MALANG','KA987',194)
 mylist.addEnd('16:00','SURABAYA','KA135',123)
-mylist.addEnd('11:00','SEMARANG','KA468',342)
 mylist.addEnd('19:30','JAKARTA','KA246',129)
 mylist.addEnd('13:00','BANDUNG','KA753',172)
 
-def Q():
+def Q(menu):
     tanya = input('\nKe menu utama? [y/t]: ').lower()
     while tanya not in ["y","t"]:
         print("Pilih jawaban yang tersedia")
-        tanya = input('[y/t]: ').lower()
+        tanya = input('Ke menu utama? [y/t]: ').lower()
     if tanya == 'y':
-        main()
+        print("Menu utama...")
+        time.sleep(0.5)
+        if menu == 1:
+            admin()
+        elif menu == 2:
+            User()
+        elif menu == 3:
+            starting()
     elif tanya == 't':
         x = 50*"-"
         print(x,"TERIMA KASIH",x)
         exit()
 
-def main():
+def admin():
     os.system('cls')
-    print('\n+-----------------------------------+')
+    print(f"\nSelamat Datang, {namaUsr}({nim})")
+    print('+-----------------------------------+')
     print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
     print('+-----------------------------------+')
     print('|     [1] Tampilkan Jadwal          |')
     print('|     [2] Mengurutkan Jadwal        |')
-    print('|     [3] Tambahkan Data Di Awal    |')
-    print('|     [4] Tambahkan Data Di Akhir   |')
-    print('|     [5] Perbarui Data             |')
-    print('|     [6] Hapus data                |')
-    print('|     [7] Histori                   |')
+    print('|     [3] Mencari Tujuan            |')
+    print('|     [4] Tambahkan Data Di Awal    |')
+    print('|     [5] Tambahkan Data Di Akhir   |')
+    print('|     [6] Perbarui Data             |')
+    print('|     [7] Hapus data                |')
+    print('|     [8] Histori                   |')
+    print('|     [9] Keluar                    |')
     print('+-----------------------------------+')
 
     ask = input('Pilih: ')
-    while ask not in ['1','2','3','4','5','6','7','8']:
+    while ask not in ['1','2','3','4','5','6','7','8','9']:
         print('Pilih dari pilihan yang tersedia')
         ask = input('Pilih: ')
         
@@ -276,11 +301,10 @@ def main():
         print('|    [3] Nomor Kereta                   |')
         print('|    [4] Jumlah Penumpang               |')
         print('+---------------------------------------+')
-        print
         ask = input("Pilih: ")
         while ask not in ['1','2','3','4']:
             print("Pilih dari pilihan yang tersedia, mohon coba lagi")
-            ask = input(": ")
+            ask = input("Pilih: ")
         if ask == '1':
             print('+-----------------------------------------------------+')
             print('|             MENGURUTKAN BERDASARKAN JAM             |')
@@ -306,6 +330,35 @@ def main():
     elif ask == '3':
         print("Memproses...")
         time.sleep(0.5)
+        os.system('cls') 
+        print('+---------------------------------------------+')
+        print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+        print('+---------------------------------------------+')
+        cari = input("Masukan Kota Tujuan : ").upper()
+        result = mylist.jumpSearch(cari)
+
+        if result == None:
+            print("Mencari..")
+            time.sleep(0.5)
+            os.system('cls')
+            print('+---------------------------------------------+')
+            print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+            print('+---------------------------------------------+')
+            print(f"\n'{cari}' tidak ditemukan, mohon coba lagi")
+
+        else:
+            print("Mencari..")
+            time.sleep(0.5)
+            os.system('cls')
+            print('+---------------------------------------------+')
+            print('|         MENCARI TUJUAN KEBERANGKATAN        |')
+            print('+---------------------------------------------+')
+            print(f"Hasil Pencarian '{cari}':")
+            print(result)
+
+    elif ask == '4':
+        print("Memproses...")
+        time.sleep(0.5)
         os.system('cls')
         print('+-----------------------------------------------------+')
         print('|       MENAMBAH JADWAL KEBERANGKATAN DI AWAL         |')
@@ -320,7 +373,7 @@ def main():
         print('Data telah ditambahkan\n')
         mylist.view()
 
-    elif ask == '4':
+    elif ask == '5':
         print("Memproses...")
         time.sleep(0.5)
         os.system('cls')
@@ -337,7 +390,7 @@ def main():
         print('Data telah ditambahkan\n')
         mylist.view()
 
-    elif ask == '5':
+    elif ask == '6':
         print("Memproses...")
         time.sleep(0.5)
         os.system('cls')
@@ -437,7 +490,7 @@ def main():
             print('')
             mylist.view()
 
-    elif ask == '6':
+    elif ask == '7':
         print("Memproses...")
         time.sleep(0.5)
         os.system('cls')
@@ -459,7 +512,7 @@ def main():
             else:
                 print(f'Nomor urut {x} tidak ditemukan. Silahkan coba lagi')
                 
-    elif ask == '7':
+    elif ask == '8':
         print("Memproses...")
         time.sleep(0.5)
         os.system('cls')
@@ -467,14 +520,11 @@ def main():
         print('|                       RIWAYAT PERUBAHAN                          |')
         print('+------------------------------------------------------------------+')
         mylist.viewHistory()
-    
-    elif ask == '8':
-        tujuan = input("Tujuan: ")
-        mylist.jump_search_task(tujuan)
         
-
-
-    
-    Q()
-
-main()
+    elif ask == '9':
+        print("Memproses...")
+        time.sleep(0.5)
+        x = 50*"-"
+        print(x,"TERIMA KASIH",x)
+        exit()
+    Q(1)
