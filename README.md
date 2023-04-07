@@ -4,7 +4,7 @@
 Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap kereta api.
 
 * Struktur Project.
-## LINKEDLIST
+### LINKEDLIST
 * **MODUL**
 ![modul](https://user-images.githubusercontent.com/125839542/230531681-e5802d2a-bc51-4410-8d68-7e1ae80f455d.png)
 
@@ -34,7 +34,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
 
 
-## LOG-IN
+### LOG-IN
 * **1.MEMBUKAN FILE JSON**
 ![inisialisai json](https://user-images.githubusercontent.com/125839542/230533296-1d320f2c-b428-4266-88e5-f84c27fd4ad2.png)
 
@@ -48,7 +48,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![addusr](https://user-images.githubusercontent.com/125839542/230533565-95ef3c66-cb9c-4e2f-b0dd-5d571fc52f41.png)
 
 
-## MENU ADMIN
+### MENU ADMIN
 ![menu admin](https://user-images.githubusercontent.com/125839542/230532259-8c3bfd90-a12c-4ffb-a9b6-68c500bcfe05.png)
 
 * **1.MELIHAT LIST**
@@ -72,7 +72,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 * **7.RIWAYAT PERUBAHAN**
 ![adhistory](https://user-images.githubusercontent.com/125839542/230532702-6225f112-8cc1-4c74-bfec-31d6b550fc67.png)
 
-## MENU USER
+### MENU USER
 ![user](https://user-images.githubusercontent.com/125839542/230532841-902b0306-ec60-49ed-be2c-f4d90cab545d.png)
 
 Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses jadwal yang tersedia. Pengguna dapat melihat daftar jadwal, mengurutkannya berdasarkan kriteria tertentu, atau mencari tujuan dengan menggunakan kode yang ada di dalam jadwal. Namun, pengguna tidak diperbolehkan untuk menambah, mengurangi, ataupun mengubah isi dari jadwal yang ditampilkan. Hak tersebut hanya diberikan pada menu admin.
