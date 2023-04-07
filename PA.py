@@ -666,17 +666,20 @@ def starting():
         name = input('Nama lengkap\t: ')
         username = input('Username baru\t: ')
         pin = input('Password baru\t: ')
-        if priv == 1:
-            nim = input('No. Pegawai\t: ')
-            data_login[username] = {"nama": name, "pin": pin, "nim":nim, "priv": priv}
-        elif priv == 2:
-            data_login[username] = {"nama": name, "pin": pin, "priv": priv}
+        if username in data_login and data_login[username]["nama"] == name:
+            print(f"Akun '{username}' sudah tersedia.")
+        else:
+            if priv == 1:
+                nim = input('No. Pegawai\t: ')
+                data_login[username] = {"nama": name, "pin": pin, "nim":nim, "priv": priv}
+            elif priv == 2:
+                data_login[username] = {"nama": name, "pin": pin, "priv": priv}
 
-        with open('LogInfo.json', 'w') as file:
-            json.dump(data_login, file,indent = 2)
+            with open('LogInfo.json', 'w') as file:
+                json.dump(data_login, file,indent = 2)
 
-        print(f"Akun '{username}' telah berhasil ditambahkan.")
-        return
+            print(f"Akun '{username}' telah berhasil ditambahkan.")
+            return
 
     def masuk():
         os.system('cls')
