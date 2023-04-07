@@ -630,3 +630,91 @@ def User():
         exit()
 
     Q(2)
+    
+def starting():
+    with open('LogInfo.json') as file:
+        data_login = json.load(file)
+
+    def login():
+        global namaUsr
+        global nim
+        os.system('cls')
+        print('+-----------------------------------+')
+        print('|           LOG-IN AKUN             |')
+        print('+-----------------------------------+')
+        usr = input('  Username\t: ')
+        pin = pwinput.pwinput('  Password\t: ')
+
+        if usr in data_login and data_login[usr]["pin"] == pin:
+            print("Log-In Berhasil")
+            namaUsr = data_login[usr]["nama"]
+            if data_login[usr]["priv"] == 1:
+                nim = data_login[usr]["nim"]
+                admin()
+            if data_login[usr]["priv"] == 2:
+                User()
+        else:
+            print("\nUsername atau Password salah, Mohon coba lagi")
+            Q(3)
+
+    def addUsr(priv):
+        os.system('cls')
+        print('+-----------------------------------+')
+        print('|         MEMBUAT AKUN BARU         |')
+        print('+-----------------------------------+')
+        name = input('Nama lengkap\t: ')
+        username = input('Username baru\t: ')
+        pin = input('Password baru\t: ')
+        if priv == 1:
+            nim = input('No. Pegawai\t: ')
+            data_login[username] = {"nama": name, "pin": pin, "nim":nim, "priv": priv}
+        elif priv == 2:
+            data_login[username] = {"nama": name, "pin": pin, "priv": priv}
+
+        with open('LogInfo.json', 'w') as file:
+            json.dump(data_login, file,indent = 2)
+
+        print(f"Akun '{username}' telah berhasil ditambahkan.")
+        return
+
+    os.system('cls')
+    print('+-----------------------------------+')
+    print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+    print('+-----------------------------------+')
+    print('|       [1] Log-In                  |')
+    print('|       [2] Buat Akun Baru          |')
+    print('|                                   |')
+    print('+-----------------------------------+')
+    ask = input("Pilih: ")
+    while ask not in ["1","2"]:
+        print("Pilihan tidak tersedia, mohon coba lagi")
+        ask = input("Pilih: ")
+
+    if ask == "1":
+        login()
+
+    elif ask == "2":
+        os.system('cls')
+        print('+-----------------------------------+')
+        print('| JADWAL KEBERANGKATAN STASIUN TUGU |')
+        print('+-----------------------------------+')
+        print('|    Membuat akun baru sebagai:     |')
+        print('|        [1] Admin                  |')
+        print('|        [2] User                   |')
+        print('+-----------------------------------+')
+        tany = input("Pilih : ")
+        while tany not in ['1','2']:
+            print("Pilih dari pilihan yang tersedia, mohon coba lagi")
+            tany = input("Pilih : ")
+        if tany == '1':
+            UId = pwinput.pwinput("Masukan Kode Admin: ")
+            if UId != "09876":
+                print("Kode yang anda masukan salah, Mohon coba lagi")
+            elif UId == "09876":
+                addUsr(1)
+
+        elif tany == '2':
+            addUsr(2)
+    
+    Q(3)
+starting()
