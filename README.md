@@ -80,7 +80,6 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses jadwal yang tersedia. Pengguna dapat melihat daftar jadwal, mengurutkannya berdasarkan kriteria tertentu, atau mencari tujuan dengan menggunakan kode yang ada di dalam jadwal. Namun, pengguna tidak diperbolehkan untuk menambah, mengurangi, ataupun mengubah isi dari jadwal yang ditampilkan. Hak tersebut hanya diberikan pada menu admin.
 
-* **1. Melihat atau Menampilkan Jadwal**
 
 
 
@@ -98,3 +97,19 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 * Cara Penggunaan.
 Program ini dapat digunakan dengan cara melakukan login terlebih dahulu. Karena ada 2 role, maka masukkan username dan PIN sesuai dengan role-nya. Jika admin maka login dengan username dan PIN untuk admin, jika pengunjung maka login dengan username dan PIN untuk pengunjung, agar tampilannya sesuai dengan role-nya. Jika sebagai admin, setelah login admin dapat memilih ia melakukan apa. Masukkan inputan sesuai perintah yang diinginkan. 
+
+**1. Melihat atau Menampilkan Jadwal**
+![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
+
+**2. Mengurutkan Jadwal Dengan Sorting**
+![Screenshot 2023-04-07 115922](https://user-images.githubusercontent.com/94899238/230538854-e8296c40-d018-4f23-990c-625ceb63a494.png)
+![Screenshot 2023-04-07 115933](https://user-images.githubusercontent.com/94899238/230538873-4a68abfa-9ab3-4281-ba5d-a75134315b43.png)
+
+**3. Mencari Tujuan Keberangkatan Dengan Searching**
+![Screenshot 2023-04-07 120818](https://user-images.githubusercontent.com/94899238/230539044-786f3bb9-c8e4-4d4a-9a86-13a37bc8c776.png)
+
+**4. Keluar Dari Menu User**
+![Screenshot 2023-04-07 121001](https://user-images.githubusercontent.com/94899238/230539200-f4d75861-1712-45d9-8e62-c325b36b8646.png)
+
+
+
