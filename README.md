@@ -4,6 +4,8 @@
 Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap kereta api.
 
 * Struktur Project.
+![adupdate](https://user-images.githubusercontent.com/125839542/230531541-64c22109-5580-4427-bd54-7f02f2e28936.png)
+
 
 
 * Fitur dan Fungsionslitas.
