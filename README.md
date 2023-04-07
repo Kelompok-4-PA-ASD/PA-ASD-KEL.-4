@@ -80,6 +80,9 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses jadwal yang tersedia. Pengguna dapat melihat daftar jadwal, mengurutkannya berdasarkan kriteria tertentu, atau mencari tujuan dengan menggunakan kode yang ada di dalam jadwal. Namun, pengguna tidak diperbolehkan untuk menambah, mengurangi, ataupun mengubah isi dari jadwal yang ditampilkan. Hak tersebut hanya diberikan pada menu admin.
 
+* **1. Melihat atau Menampilkan Jadwal**
+
+
 
 
 
