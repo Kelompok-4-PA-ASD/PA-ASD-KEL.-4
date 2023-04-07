@@ -138,16 +138,15 @@ class linkedList:
             temp = None
             time.sleep(0.5)
             return 1
-
     def mergeSort(self, head,elemen):
         if not head or not head.next:
             return head
         mid = self.getMiddle(head)
         next_to_mid = mid.next
         mid.next = None
-        left = self.mergeSort(head,elemen)
-        right = self.mergeSort(next_to_mid,elemen)
-        sorted_lst = self.merge(left, right,elemen)
+        left = self.mergeSort(head, elemen)
+        right = self.mergeSort(next_to_mid, elemen)
+        sorted_lst = self.merge(left, right, elemen)
         return sorted_lst
         
     def getMiddle(self, head):
@@ -165,7 +164,7 @@ class linkedList:
             return right
         if not right:
             return left
-        if elemen ==1 :
+        if elemen == 1:
             x = left.jam
             y = right.jam
         elif elemen == 2:
@@ -179,11 +178,28 @@ class linkedList:
             y = right.penumpang
         if x <= y:
             result = left
-            result.next = self.merge(left.next, right,elemen)
+            result.next = self.merge(left.next, right, elemen)
         else:
             result = right
-            result.next = self.merge(left, right.next,elemen)
+            result.next = self.merge(left, right.next, elemen)
         return result
+
+    def sortAndPrint(self, elemen):
+        temp_list = []
+        current = self.head
+        while current:
+            temp_list.append(current)
+            current = current.next
+
+        temp_list.sort(key=lambda x: x.jam if elemen == 1 else x.tujuan if elemen == 2 else x.nomor if elemen == 3 else x.penumpang)
+
+        table = PrettyTable()
+        table.field_names = ["Jam", "Tujuan", "Nomor Penerbangan", "Penumpang"]
+        table.align["Tujuan"] = 'l'
+        for node in temp_list:
+            table.add_row([node.jam, node.tujuan, node.nomor, node.penumpang])
+        print(table)
+        
         
     def jumpSearch(self, tujuan):
         found = False
