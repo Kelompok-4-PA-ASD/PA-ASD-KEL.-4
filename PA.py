@@ -684,10 +684,10 @@ def starting():
     print('+-----------------------------------+')
     print('|       [1] Log-In                  |')
     print('|       [2] Buat Akun Baru          |')
-    print('|                                   |')
+    print('|       [3] Keluar                  |')
     print('+-----------------------------------+')
     ask = input("Pilih: ")
-    while ask not in ["1","2"]:
+    while ask not in ["1","2","3]:
         print("Pilihan tidak tersedia, mohon coba lagi")
         ask = input("Pilih: ")
 
@@ -716,6 +716,13 @@ def starting():
 
         elif tany == '2':
             addUsr(2)
+            
+    elif ask == "3":
+        print("Memproses...")
+        time.sleep(0.5)
+        x = 50*"-"
+        print(x,"TERIMA KASIH",x)
+        exit()
     
     Q(3)
 starting()
