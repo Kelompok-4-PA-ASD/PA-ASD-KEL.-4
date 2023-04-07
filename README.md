@@ -30,8 +30,7 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![searching](https://user-images.githubusercontent.com/125839542/230532043-b2ffe1fd-828b-4338-ad7c-824a6c4ad437.png)
 
 * **INISIALISASI CLASS**
-
-![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
+* ![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
 
 
 ### LOG-IN
@@ -46,6 +45,10 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 * **4.MENU TAMBAH AKUN**
 ![addusr](https://user-images.githubusercontent.com/125839542/230533565-95ef3c66-cb9c-4e2f-b0dd-5d571fc52f41.png)
+
+* **5.FILE JSON**
+![isi json](https://user-images.githubusercontent.com/125839542/230534150-563c1766-013d-41d8-9b8d-16bc9ea05fa9.png)
+
 
 
 ### MENU ADMIN
