@@ -29,7 +29,11 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 ![searching](https://user-images.githubusercontent.com/125839542/230532043-b2ffe1fd-828b-4338-ad7c-824a6c4ad437.png)
 
 * **INISIALISASI CLASS**
+
 ![inisialisasi clas](https://user-images.githubusercontent.com/125839542/230532090-e60a4df5-32a5-4a12-9ceb-89b18f052125.png)
+
+** msa
+
 
 
 
