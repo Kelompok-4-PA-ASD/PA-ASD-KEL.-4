@@ -1,9 +1,10 @@
-# Dokumentasi
+# Dokumentasi Program
 
-* Deskripsi Program.
+<h2>Deskripsi Program<h2>
+
 Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap kereta api.
 
-* Struktur Project.
+<h2>Struktur Project<h2>
 
 ### LINKEDLIST
 * **MODUL**
@@ -81,6 +82,19 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses jadwal yang tersedia. Pengguna dapat melihat daftar jadwal, mengurutkannya berdasarkan kriteria tertentu, atau mencari tujuan dengan menggunakan kode yang ada di dalam jadwal. Namun, pengguna tidak diperbolehkan untuk menambah, mengurangi, ataupun mengubah isi dari jadwal yang ditampilkan. Hak tersebut hanya diberikan pada menu admin.
 
+**1. Melihat atau Menampilkan Jadwal**
+![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
+
+**2. Mengurutkan Jadwal Dengan Sorting**
+![Screenshot 2023-04-07 115922](https://user-images.githubusercontent.com/94899238/230538854-e8296c40-d018-4f23-990c-625ceb63a494.png)
+![Screenshot 2023-04-07 115933](https://user-images.githubusercontent.com/94899238/230538873-4a68abfa-9ab3-4281-ba5d-a75134315b43.png)
+
+**3. Mencari Tujuan Keberangkatan Dengan Searching**
+![Screenshot 2023-04-07 120818](https://user-images.githubusercontent.com/94899238/230539044-786f3bb9-c8e4-4d4a-9a86-13a37bc8c776.png)
+
+**4. Keluar Dari Menu User**
+
+![Screenshot 2023-04-07 123409](https://user-images.githubusercontent.com/94899238/230541453-6664d7a4-24eb-43f4-bd77-106963184b35.png)
 
 
 
@@ -103,38 +117,17 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 * Selanjutnya, jika user memilih pilihan 2 atau membuat akun baru, maka program akan menanyakan apakah user tersebut ingin mendaftar sebagai administrator atau hanya user biasa. Jika user tersebut ingin mendaftar sebagai admin, itu tidak bisa dilakukan oleh sembarangan user, user perlu memasukan kode keamanan admin yang hanya dimiliki oleh admin yang sudah ada. Dan jika user hanya ingin mendaftar sebagai pengguna biasa, maka user hanya perlu mengisikan nama lengkap, username, dan password baru. Jika telah berhasil mendaftar, maka user sudah bisa login ke menu pilihan jadwal keberangkat kereta sesuai dengan "Role" yang dimilikinya.
 
-**A. Menu pilihan sebagai admin
+**A. Menu pilihan sebagai admin**
 
 Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa, seperti:
-- 1. Menampilkan jadwal
-- 2. Mengurutkan jadwal
-- 3. Mencari Tujuan
-- 4. Menambahkan data jadwal dibagian awal
-- 5. Menambahkan data jadwal dibagian akhir
-- 6. Memperbarui data jadwal
-- 7. Menghapus Data
-- 8. Histori yang telah dilakukan oleh administrator
-- 9. Keluar dari program.
+- Menampilkan jadwal
+- Mengurutkan jadwal
+- Mencari Tujuan
+- Menambahkan data jadwal dibagian awal
+- Menambahkan data jadwal dibagian akhir
+- Memperbarui data jadwal
+- Menghapus Data
+- Histori yang telah dilakukan oleh administrator
+- Keluar dari program.
 
-**B. Menu pilihan sebagai user biasa
-
-
-
-
-**1. Melihat atau Menampilkan Jadwal**
-![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
-
-**2. Mengurutkan Jadwal Dengan Sorting**
-![Screenshot 2023-04-07 115922](https://user-images.githubusercontent.com/94899238/230538854-e8296c40-d018-4f23-990c-625ceb63a494.png)
-![Screenshot 2023-04-07 115933](https://user-images.githubusercontent.com/94899238/230538873-4a68abfa-9ab3-4281-ba5d-a75134315b43.png)
-
-**3. Mencari Tujuan Keberangkatan Dengan Searching**
-![Screenshot 2023-04-07 120818](https://user-images.githubusercontent.com/94899238/230539044-786f3bb9-c8e4-4d4a-9a86-13a37bc8c776.png)
-
-**4. Keluar Dari Menu User**
-
-![Screenshot 2023-04-07 123409](https://user-images.githubusercontent.com/94899238/230541453-6664d7a4-24eb-43f4-bd77-106963184b35.png)
-
-
-
-
+**B. Menu pilihan sebagai user biasa**
