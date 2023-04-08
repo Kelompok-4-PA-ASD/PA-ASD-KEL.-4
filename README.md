@@ -101,7 +101,9 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 * Selanjutnya, saat user memilih pilihan 1 atau login maka program akan meminta user untuk memasukkan username dan password yang telah dimiliki. Maka sistem akan mendeteksi apakah pengguna tersebut user biasa atau admin yang mengelola jadwal keberangkatan kereta di stasiun. Jika, pengguna tersebut dideteksi sebagai admin maka program akan menampilkan menu pilihan admin. Dan jika pengguna tersebut dideteksi sebagai user biasa, maka program akan menampilkan menu pilihan tersendiri.
 
-* Selanjutnya, jika user memilih pilihan 2 atau membuat akun baru, maka program akan menanyakan apakah user tersebut ingin mendaftar sebagai administrator atau hanya user biasa. Jika user tersebut ingin mendaftar sebagai admin, itu tidak bisa dilakukan oleh sembarangan user, user perlu memasukan kode keamanan admin yang hanya dimiliki oleh admin yang sudah ada. Dan jika user hanya ingin mendaftar sebagai pengguna biasa, maka user hanya perlu mengisikan nama lengkap, username, dan password baru. Jika telah berhasil mendaftar, maka user sudah bisa login ke menu pilihan jadwal keberangkat kereta sesuai dengan "Role" yang dimilikinya. 
+* Selanjutnya, jika user memilih pilihan 2 atau membuat akun baru, maka program akan menanyakan apakah user tersebut ingin mendaftar sebagai administrator atau hanya user biasa. Jika user tersebut ingin mendaftar sebagai admin, itu tidak bisa dilakukan oleh sembarangan user, user perlu memasukan kode keamanan admin yang hanya dimiliki oleh admin yang sudah ada. Dan jika user hanya ingin mendaftar sebagai pengguna biasa, maka user hanya perlu mengisikan nama lengkap, username, dan password baru. Jika telah berhasil mendaftar, maka user sudah bisa login ke menu pilihan jadwal keberangkat kereta sesuai dengan "Role" yang dimilikinya.
+
+## Menu pilihan sebagai admin
 
 
 
