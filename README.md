@@ -5,8 +5,6 @@ Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk or
 
 * Struktur Project.
 
-* Fitur dan Fungsionalitas
-
 ### LINKEDLIST
 * **MODUL**
 ![modul](https://user-images.githubusercontent.com/125839542/230531681-e5802d2a-bc51-4410-8d68-7e1ae80f455d.png)
