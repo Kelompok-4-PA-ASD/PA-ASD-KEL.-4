@@ -101,6 +101,8 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 * Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1, 2 dan 3 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut. Selanjutnya pilihan 3, pilihan ini digunakan jika pengguna ingin mengakhiri dan keluar dari program.
 
+* Selanjutnya, saat user memilih pilihan 1 atau login maka program akan meminta user untuk memasukkan username dan password yang telah dimiliki. Maka sistem akan mendeteksi apakah pengguna tersebut user biasa atau admin yang mengelola jadwal keberangkatan kereta di stasiun. Jika, pengguna tersebut dideteksi sebagai admin maka program akan menampilkan menu pilihan admin. Dan jika pengguna tersebut dideteksi sebagai user biasa, maka program akan menampilkan menu pilihan tersendiri.
+
 **1. Melihat atau Menampilkan Jadwal**
 ![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
 
