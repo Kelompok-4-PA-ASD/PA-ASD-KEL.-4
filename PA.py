@@ -335,21 +335,33 @@ def admin():
             print("Pilih dari pilihan yang tersedia, mohon coba lagi")
             ask = input("Pilih: ")
         if ask == '1':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|             MENGURUTKAN BERDASARKAN JAM             |')
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(1)
         if ask == '2':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|           MENGURUTKAN BERDASARKAN TUJUAN            |') 
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(2)
         if ask == '3':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|         MENGURUTKAN BERDASARKAN NOMOR KERETA        |')
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(3)
         if ask == '4': 
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|          MENGURUTKAN BERDASARKAN PENUMPANG          |')
             print('+-----------------------------------------------------+')
@@ -602,26 +614,37 @@ def User():
             print("Pilih dari pilihan yang tersedia, mohon coba lagi")
             ask = input("Pilih: ")
         if ask == '1':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|             MENGURUTKAN BERDASARKAN JAM             |')
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(1)
         if ask == '2':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|           MENGURUTKAN BERDASARKAN TUJUAN            |') 
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(2)
         if ask == '3':
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|         MENGURUTKAN BERDASARKAN NOMOR KERETA        |')
             print('+-----------------------------------------------------+')
             mylist.sortAndPrint(3)
         if ask == '4': 
+            print("Memproses...")
+            time.sleep(0.5)
+            os.system('cls')
             print('+-----------------------------------------------------+')
             print('|          MENGURUTKAN BERDASARKAN PENUMPANG          |')
             print('+-----------------------------------------------------+')
-            mylist.sortAndPrint(4)  
-
+            mylist.sortAndPrint(4)
     elif ask == '3':
         print("Memproses...")
         time.sleep(0.5)
@@ -719,50 +742,48 @@ def starting():
         print('|       [2] Buat Akun Baru          |')
         print('|       [3] Keluar                  |')
         print('+-----------------------------------+')
-        try:
+        ask = input("Pilih: ")
+        while ask not in ["1","2","3"]:
+            print("Pilihan tidak tersedia, mohon coba lagi")
             ask = input("Pilih: ")
-            while ask not in ["1","2","3"]:
-                print("Pilihan tidak tersedia, mohon coba lagi")
-                ask = input("Pilih: ")
 
-            if ask == "1":
-                login()
+        if ask == "1":
+            login()
 
-            elif ask == "2":
-                os.system('cls')
-                print('+-----------------------------------+')
-                print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
-                print('+-----------------------------------+')
-                print('|    Membuat akun baru sebagai:     |')
-                print('|        [1] Admin                  |')
-                print('|        [2] User                   |')
-                print('|        [3] Kembali                |')
-                print('+-----------------------------------+')
+        elif ask == "2":
+            os.system('cls')
+            print('+-----------------------------------+')
+            print('| JADWAL KEBERANGKATAN STASIUN JAKK |')
+            print('+-----------------------------------+')
+            print('|    Membuat akun baru sebagai:     |')
+            print('|        [1] Admin                  |')
+            print('|        [2] User                   |')
+            print('|        [3] Kembali                |')
+            print('+-----------------------------------+')
+            tany = input("Pilih : ")
+            while tany not in ['1','2','3']:
+                print("Pilih dari pilihan yang tersedia, mohon coba lagi")
                 tany = input("Pilih : ")
-                while tany not in ['1','2','3']:
-                    print("Pilih dari pilihan yang tersedia, mohon coba lagi")
-                    tany = input("Pilih : ")
-                if tany == '1':
-                    UId = pwinput.pwinput("Masukan Kode Admin: ")
-                    if UId != "09876":
-                        print("Kode yang anda masukan salah, Mohon coba lagi")
-                    elif UId == "09876":
-                        addUsr(1)
+            if tany == '1':
+                UId = pwinput.pwinput("Masukan Kode Admin: ")
+                if UId != "09876":
+                    print("Kode yang anda masukan salah, Mohon coba lagi")
+                elif UId == "09876":
+                    addUsr(1)
 
-                elif tany == '2':
-                    addUsr(2)
+            elif tany == '2':
+                addUsr(2)
 
-                elif tany == '3':
-                    masuk()
+            elif tany == '3':
+                masuk()
 
-            elif ask == "3":
-                print("Memproses...")
-                time.sleep(0.5)
-                x = 50*"-"
-                print(x,"TERIMA KASIH",x)
-                exit()
-        except: SystemExit
-            
+        elif ask == "3":
+            print("Memproses...")
+            time.sleep(0.5)
+            x = 50*"-"
+            print(x,"TERIMA KASIH",x)
+            exit()
+
     masuk()
     
     Q(3)
