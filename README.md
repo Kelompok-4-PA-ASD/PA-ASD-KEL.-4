@@ -97,11 +97,14 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 
 # Cara Penggunaan:
-* Program ini dapat digunakan dengan cara melakukan login terlebih dahulu. Karena ada 2 role, maka masukkan username dan PIN sesuai dengan role-nya. Jika admin maka login dengan username dan PIN untuk admin, jika pengunjung maka login dengan username dan PIN untuk pengunjung, agar tampilannya sesuai dengan role-nya. Jika sebagai admin, setelah login admin dapat memilih ia melakukan apa. Masukkan inputan sesuai perintah yang diinginkan.
-
 * Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1, 2 dan 3 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut. Selanjutnya pilihan 3, pilihan ini digunakan jika pengguna ingin mengakhiri dan keluar dari program.
 
 * Selanjutnya, saat user memilih pilihan 1 atau login maka program akan meminta user untuk memasukkan username dan password yang telah dimiliki. Maka sistem akan mendeteksi apakah pengguna tersebut user biasa atau admin yang mengelola jadwal keberangkatan kereta di stasiun. Jika, pengguna tersebut dideteksi sebagai admin maka program akan menampilkan menu pilihan admin. Dan jika pengguna tersebut dideteksi sebagai user biasa, maka program akan menampilkan menu pilihan tersendiri.
+
+* Selanjutnya, jika user memilih pilihan 2 atau membuat akun baru, maka program akan menanyakan apakah user tersebut ingin mendaftar sebagai administrator atau hanya user biasa. Jika user tersebut ingin mendaftar sebagai admin, itu tidak bisa dilakukan oleh sembarangan user, user perlu memasukan kode keamanan admin yang hanya dimiliki oleh admin yang sudah ada. Dan jika user hanya ingin mendaftar sebagai pengguna biasa, maka user hanya perlu mengisikan nama lengkap, username, dan password baru. Jika telah berhasil mendaftar, maka user sudah bisa login ke menu pilihan jadwal keberangkat kereta sesuai dengan "Role" yang dimilikinya. 
+
+
+
 
 **1. Melihat atau Menampilkan Jadwal**
 ![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
@@ -114,7 +117,6 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 ![Screenshot 2023-04-07 120818](https://user-images.githubusercontent.com/94899238/230539044-786f3bb9-c8e4-4d4a-9a86-13a37bc8c776.png)
 
 **4. Keluar Dari Menu User**
-
 ![Screenshot 2023-04-07 123409](https://user-images.githubusercontent.com/94899238/230541453-6664d7a4-24eb-43f4-bd77-106963184b35.png)
 
 
