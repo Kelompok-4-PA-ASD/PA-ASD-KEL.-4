@@ -118,7 +118,7 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 
 **A. Menu pilihan sebagai admin**
 
-Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa, seperti:
+Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa dan semua menu pilihan dapat disesuaikan dengan kebutuhan administrator, seperti:
 - Menampilkan jadwal
 - Mengurutkan jadwal
 - Mencari Tujuan
@@ -131,7 +131,7 @@ Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberan
 
 **B. Menu pilihan sebagai user biasa**
 
-Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, maka program akan menampilkan menu pilihan khusus user saja. Karena user biasa tidak akan mendapatkan akses yang lebih dibandingkan admin, menu pilihan user berisikan:
+Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, maka program akan menampilkan menu pilihan khusus user saja. Karena user biasa tidak akan mendapatkan akses yang lebih dibandingkan admin. Dan semua menu pilihan dapat disesuaikan dengan kebutuhan user, menu pilihan user berisikan:
 - Menampilkan jadwal keberangkatan kereta
 - Mengurutkan jadwal
 - Mencari tujuan
