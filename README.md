@@ -99,7 +99,7 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 # Cara Penggunaan:
 * Program ini dapat digunakan dengan cara melakukan login terlebih dahulu. Karena ada 2 role, maka masukkan username dan PIN sesuai dengan role-nya. Jika admin maka login dengan username dan PIN untuk admin, jika pengunjung maka login dengan username dan PIN untuk pengunjung, agar tampilannya sesuai dengan role-nya. Jika sebagai admin, setelah login admin dapat memilih ia melakukan apa. Masukkan inputan sesuai perintah yang diinginkan.
 
-* Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1 dan 2 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut.
+* Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1, 2 dan 3 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut. Selanjutnya pilihan 3, pilihan ini digunakan jika pengguna ingin mengakhiri dan keluar dari program.
 
 **1. Melihat atau Menampilkan Jadwal**
 ![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
