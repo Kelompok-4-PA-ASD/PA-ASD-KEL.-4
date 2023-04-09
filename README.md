@@ -94,14 +94,6 @@ Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses j
 
 ![Screenshot 2023-04-07 123409](https://user-images.githubusercontent.com/94899238/230541453-6664d7a4-24eb-43f4-bd77-106963184b35.png)
 
-
-
-
-
-
-
-
-
 ## Fitur dan Fungsionslitas:
 Pada awal program, terdapat fitur login yang dapat digunakan oleh admin dan juga pengunjung. Fitur login digunakan agar program dapat menentukan fitur yang harus ditampilkan. Dengan username dan PIN yang berbeda antara admin dan pengunjung, program dapat menentukan fitur yang harus ditampilkan sesuai dengan role-nya.
 Pada bagian admin, terdapat 8 fitur. Yang pertama adalah fitur tampilkan data, yang dapat digunakan oleh admin untuk menampilkan data yang ada. Kedua, fitur mengurutkan jadwal, digunakan oleh admin untuk melihat data sesuai dengan urutan yang diinginkan. Contohnya seperti menampilkan data sesuai urutan dari tabel jam secara ascending. Ketiga, fitur tambahkan data di awal, digunakan oleh admin untuk menambahkan data di awal. Keempat, fitur tambahkan data di akhir, digunakan oleh admin untuk menambahkan data di akhir. Kelima, fitur perbaiki data, digunakan oleh admin untuk memperbaiki data jika ada data yang salah atau jika memang ingin memperbarui data yang sudah ada. Keenam, fitur hapus data, digunakan oleh admin untuk menghapus data yang ada. Ketujuh, fitur histori, digunakan oleh admin untuk melihat riwayat aktifitas yang dilakukan oleh admin ketika menambahkan, menghapus, dan memperbarui data.
@@ -118,16 +110,20 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 **A. Menu pilihan sebagai admin**
 
 Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa dan semua menu pilihan dapat disesuaikan dengan kebutuhan administrator, seperti:
-#### Menampilkan jadwal, 
+##### Menampilkan jadwal, 
 * Jika admin memilih pilihan pertama, maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
 ##### Mengurutkan jadwal
 * Jika admin memilih pilihan kedua, maka program akan menampilkan pilihan pengurutan jadwal berdasarkan Jam keberangkatan, Tujuan keberangkatan, Nomor kereta, dan Jumlah penumpang. Dan semua itu dapat dipilih oleh admin dengan menyesuaikan keperluannya.
 ##### Mencari Tujuan
 * jika admin memilih piiihan ketiga, maka program akan meminta admin menginputkan jadwal keberangkatan kereta berdasarkan kota tujuan kereta tersebut. Jika pada jadwal keberangkatan kota yang dicari berada di jadwal, maka program akan menampilkan jadwal keberangkatan yang hanya bertujuan ke kota yang diinput atau dicari oleh admin. Dan jika kota atau tujuan yang dicari tidak ditemukan, maka program akan menampilkan pesan bahwa jadwal keberangkatan ke kota tersebut tidak ada, dan akan menyakan apakah admin ingin kembali ke menu pilihan lagi.
 ##### Menambahkan data jadwal dibagian awal
+* Jika admin memilih pilihan keempat, maka program akan menampilkan jadwal keberangkatan yang sudah ada dan menampilkan pesan bahwa jika admin menambahkan jadwal baru pada menu ini, maka jadwal tersebut akan ditambahkan di paling atas atau urutan pertama berdasarkan jadwal. Admin juga diminta untuk mengiiput data-data baru agar jadwal bisa dibuat, seperti Jam keberangkatan, Tujuan, Nomor kererta, dan Jumlah penumpang.
 ##### Menambahkan data jadwal dibagian akhir
+* Jika admin memilih pilihan kelima, maka program akan menampilkan jadwal keberangkatan yang sudah ada. Namun kebalikan dari pilhan sebelumnya, program akan menampilkan pesan bahwa jika admin menambahkan jadwal baru pada menu ini, maka jadwal tersebut akan ditambahkan di paling bawah atau urutan terakhir berdasarkan jadwal. Admin juga diminta untuk mengiiput data-data baru agar jadwal bisa dibuat, seperti Jam keberangkatan, Tujuan, Nomor kererta, dan Jumlah penumpang. 
 ##### Memperbarui data jadwal
+* Jika admin memilih pilihan keenam, maka program akan menampilkan daftar opsi untuk perbarui data yang terdiri dari jam keberangkatan, tujuan keberangkatan, nomor kereta, dan jumlah penumpang. Setelah admin memilih opsi yang diinginkan, program akan meminta input dari admin untuk memperbarui data yang dipilih. Jika admin memilih opsi "1", program akan menampilkan data keberangkatan dan meminta pengguna untuk memasukkan nomor urut data yang ingin diperbarui serta jam keberangkatan yang baru. Hal yang sama dilakukan jika pengguna memilih opsi "2", "3", atau "4" dengan input yang diminta berupa tujuan keberangkatan, nomor kereta, dan jumlah penumpang yang baru. Jika proses pembaruan berhasil dilakukan, program akan menampilkan data jadwal keberangkatan yang terbaru. Sebaliknya, jika terjadi kesalahan dalam proses input pada proses pembaruan data, maka program akan memberikan pesan kesalahan dan meminta admin untuk memasukkan input baru.
 ##### Menghapus Data
+Jika admin memilih pilihan ketujuh, maka program akan melakukan proses menghapus data jadwal keberangkatan dengan ketentuan, program akan meminta input dari admin untuk menentukan nomor urut data yang ingin dihapus. Jika data berhasil dihapus, program akan menampilkan pesan "Data telah dihapus" dan menampilkan ulang data jadwal keberangkatan yang ada. Namun, jika nomor urut yang dimasukkan tidak ditemukan, program akan menampilkan pesan "Nomor urut tidak ditemukan. Silahkan coba lagi" dan meminta admin untuk memasukkan nomor urut yang lain. 
 ##### Histori yang telah dilakukan oleh administrator
 ##### Keluar dari program.
 
