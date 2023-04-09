@@ -132,7 +132,11 @@ Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberan
 **B. Menu pilihan sebagai user biasa**
 
 Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, maka program akan menampilkan menu pilihan khusus user saja. Karena user biasa tidak akan mendapatkan akses yang lebih dibandingkan admin. Dan semua menu pilihan dapat disesuaikan dengan kebutuhan user, menu pilihan user berisikan:
-- Menampilkan jadwal keberangkatan kereta
-- Mengurutkan jadwal
-- Mencari tujuan
-- Keluar dari Program
+##### Menampilkan jadwal keberangkatan kereta
+* Jika user memilih pilihan pertama, sama halnya dengan pilihan admin. Maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
+##### Mengurutkan jadwal
+* Jika user memilih pilihan kedua, sama halnya dengan pilihan admin. Maka program akan menampilkan pilihan pengurutan jadwal berdasarkan 1. Jam keberangkatan, 2. Tujuan keberangkatan, 3. Nomor kereta, dan 4. Jumlah penumpang. Dan semua itu dapat dipilih oleh user agar dapat menyesuaikan dengan keperluannya. Jika user memasukkan pilihan selain angka 1,2,3, atau 4, program akan menampilkan pesan "Pilih dari pilihan yang tersedia, mohon coba lagi" dan meminta pengguna untuk memilih kembali hingga memasukkan pilihan yang ada.
+##### Mencari tujuan
+* jika user memilih piiihan ketiga, sama halnya dengan pilihan admin. Maka program akan meminta user menginputkan jadwal keberangkatan kereta berdasarkan kota tujuan kereta tersebut. Jika pada jadwal keberangkatan kota yang dicari berada di jadwal, maka program akan menampilkan jadwal keberangkatan yang hanya bertujuan ke kota yang diinput atau dicari oleh admin. Dan jika kota atau tujuan yang dicari tidak ditemukan, maka program akan menampilkan pesan bahwa jadwal keberangkatan ke kota tersebut tidak ada, dan akan menyakan apakah user tersebut ingin kembali ke menu pilihan lagi.
+##### Keluar dari Program
+* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan terhenti dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
