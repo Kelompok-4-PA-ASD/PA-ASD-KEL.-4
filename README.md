@@ -118,15 +118,18 @@ Pada bagian pengunjung, hanya terdapat 2 fitur. Yang pertama adalah fitur tampil
 **A. Menu pilihan sebagai admin**
 
 Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa dan semua menu pilihan dapat disesuaikan dengan kebutuhan administrator, seperti:
-- Menampilkan jadwal
-- Mengurutkan jadwal
-- Mencari Tujuan
-- Menambahkan data jadwal dibagian awal
-- Menambahkan data jadwal dibagian akhir
-- Memperbarui data jadwal
-- Menghapus Data
-- Histori yang telah dilakukan oleh administrator
-- Keluar dari program.
+#### Menampilkan jadwal, 
+* Jika admin memilih pilihan pertama, maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
+##### Mengurutkan jadwal
+* Jika admin memilih pilihan kedua, maka program akan menampilkan pilihan pengurutan jadwal berdasarkan Jam keberangkatan, Tujuan keberangkatan, Nomor kereta, dan Jumlah penumpang. Dan semua itu dapat dipilih oleh admin dengan menyesuaikan keperluannya.
+##### Mencari Tujuan
+* jika admin memilih piiihan ketiga, maka program akan meminta admin menginputkan jadwal keberangkatan kereta berdasarkan kota tujuan kereta tersebut. Jika pada jadwal keberangkatan kota yang dicari berada di jadwal, maka program akan menampilkan jadwal keberangkatan yang hanya bertujuan ke kota yang diinput atau dicari oleh admin. Dan jika kota atau tujuan yang dicari tidak ditemukan, maka program akan menampilkan pesan bahwa jadwal keberangkatan ke kota tersebut tidak ada, dan akan menyakan apakah admin ingin kembali ke menu pilihan lagi.
+##### Menambahkan data jadwal dibagian awal
+##### Menambahkan data jadwal dibagian akhir
+##### Memperbarui data jadwal
+##### Menghapus Data
+##### Histori yang telah dilakukan oleh administrator
+##### Keluar dari program.
 
 **B. Menu pilihan sebagai user biasa**
 
