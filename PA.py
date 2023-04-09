@@ -94,16 +94,19 @@ class linkedList:
                 return 0
             if elemen == 1:
                 pointer.jam = newValue
-                self.history.append(f'Mengubah nomor kereta | {pointer.jam} | menjadi | {newValue} |')
+                self.history.append(f'Mengubah jam | {pointer.jam} | menjadi | {newValue} |')
             elif elemen == 2:
                 pointer.tujuan = newValue
-                self.history.append(f'Mengubah nomor kereta | {pointer.tujuan} | menjadi | {newValue} |')
+                self.history.append(f'Mengubah tujuan | {pointer.tujuan} | menjadi | {newValue} |')
             elif elemen == 3:
                 pointer.nomor = newValue
-                self.history.append(f'Mengubah nomor kereta | {pointer.nomor} | menjadi | {newValue} |')
+                self.history.append(f'Mengubah nomor | {pointer.nomor} | menjadi | {newValue} |')
             elif elemen == 4:
                 pointer.penumpang = newValue
-                self.history.append(f'Mengubah nomor kereta | {pointer.penumpang} | menjadi | {newValue} |')
+                self.history.append(f'Mengubah penumpang | {pointer.penumpang} | menjadi | {newValue} |')
+            print('Memproses...')
+            time.sleep(0.6)
+            os.system('cls')
             print("Jadwal telah diperbarui")
             return 1
         else:
