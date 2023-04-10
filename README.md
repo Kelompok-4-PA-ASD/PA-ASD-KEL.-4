@@ -89,24 +89,22 @@
 
 
 ### MENU USER
-![user](https://user-images.githubusercontent.com/125839542/230532841-902b0306-ec60-49ed-be2c-f4d90cab545d.png)
+![def](https://user-images.githubusercontent.com/94899238/230804362-b8df3aef-6e96-4e9b-8af7-93dea95bea1c.png)
 
 #### Pada menu user, terdapat beberapa pilihan yang dapat digunakan untuk mengakses jadwal yang tersedia. 
 * Pengguna dapat melihat daftar jadwal, mengurutkannya berdasarkan kriteria tertentu, atau mencari tujuan dengan menggunakan kode yang ada di dalam jadwal. Namun, pengguna tidak diperbolehkan untuk menambah, mengurangi, ataupun mengubah isi dari jadwal yang ditampilkan. Hak tersebut hanya diberikan pada menu admin.
 
 **1. Melihat atau Menampilkan Jadwal**
-![Screenshot 2023-04-07 115524](https://user-images.githubusercontent.com/94899238/230538723-eef00091-7b92-48ab-8250-932d50bd3039.png)
+![view](https://user-images.githubusercontent.com/94899238/230804456-7250bc56-77e5-468b-bdbc-6d9d8fb1c2cd.png)
 
 **2. Mengurutkan Jadwal Dengan Sorting**
-![Screenshot 2023-04-07 115922](https://user-images.githubusercontent.com/94899238/230538854-e8296c40-d018-4f23-990c-625ceb63a494.png)
-![Screenshot 2023-04-07 115933](https://user-images.githubusercontent.com/94899238/230538873-4a68abfa-9ab3-4281-ba5d-a75134315b43.png)
+![sort](https://user-images.githubusercontent.com/94899238/230804476-e0e9b65d-637a-4922-89d6-2c26eee5b981.png)
 
 **3. Mencari Tujuan Keberangkatan Dengan Searching**
-![Screenshot 2023-04-07 120818](https://user-images.githubusercontent.com/94899238/230539044-786f3bb9-c8e4-4d4a-9a86-13a37bc8c776.png)
+![searching](https://user-images.githubusercontent.com/94899238/230804487-2a7cac5b-2d9b-43dd-a474-76129e38e53a.png)
 
 **4. Keluar Dari Menu User**
-
-![Screenshot 2023-04-07 123409](https://user-images.githubusercontent.com/94899238/230541453-6664d7a4-24eb-43f4-bd77-106963184b35.png)
+![exit](https://user-images.githubusercontent.com/94899238/230804533-347eaf3c-e97a-4ea8-9734-0e5a254e5c0b.png)
 
 ## Fitur dan Fungsionslitas:
 * Pada awal program, terdapat fitur login yang dapat digunakan oleh admin dan juga pengunjung. Fitur login digunakan agar program dapat menentukan fitur yang harus ditampilkan. Dengan username dan PIN yang berbeda antara admin dan pengunjung, program dapat menentukan fitur yang harus ditampilkan sesuai dengan role-nya.
