@@ -122,43 +122,119 @@ Pada bagian admin, terdapat 8 fitur. Yang pertama adalah fitur tampilkan data, y
 * Kedua, fitur mengurutkan jadwal, digunakan oleh pengunjung untuk melihat jadwal sesuai dengan urutan yang diinginkan. Contohnya seperti ketika pengunjung ingin melihat jadwal dengan urutan jam secara ascending, maka pengunjung dapat memilih untuk data diurutkan sesuai jam keberangkatan.
 
 
-## Cara Penggunaan:
+## Cara Penggunaan Beserta Outputnya:
 * Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1, 2 dan 3 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut. Selanjutnya pilihan 3, pilihan ini digunakan jika pengguna ingin mengakhiri dan keluar dari program.
+
+![Screenshot 2023-04-20 201151](https://user-images.githubusercontent.com/94899238/234831465-e589c392-ad2a-4551-82e4-195b5c7a35d3.png)
 
 * Selanjutnya, saat user memilih pilihan 1 atau login maka program akan meminta user untuk memasukkan username dan password yang telah dimiliki. Maka sistem akan mendeteksi apakah pengguna tersebut user biasa atau admin yang mengelola jadwal keberangkatan kereta di stasiun. Jika, pengguna tersebut dideteksi sebagai admin maka program akan menampilkan menu pilihan admin. Dan jika pengguna tersebut dideteksi sebagai user biasa, maka program akan menampilkan menu pilihan tersendiri.
 
+![Screenshot 2023-04-20 201231](https://user-images.githubusercontent.com/94899238/234831796-41b9c842-f447-4d03-88fb-892b77b57e91.png)
+
 * Selanjutnya, jika user memilih pilihan 2 atau membuat akun baru, maka program akan menanyakan apakah user tersebut ingin mendaftar sebagai administrator atau hanya user biasa. Jika user tersebut ingin mendaftar sebagai admin, itu tidak bisa dilakukan oleh sembarangan user, user perlu memasukan kode keamanan admin yang hanya dimiliki oleh admin yang sudah ada. Dan jika user hanya ingin mendaftar sebagai pengguna biasa, maka user hanya perlu mengisikan nama lengkap, username, dan password baru. Jika telah berhasil mendaftar, maka user sudah bisa login ke menu pilihan jadwal keberangkat kereta sesuai dengan "Role" yang dimilikinya.
 
+1. (Pilihan untuk mendaftar)
+
+![Screenshot 2023-04-20 201308](https://user-images.githubusercontent.com/94899238/234832467-cb5aa22f-a865-4dbd-b9c5-7cbbb3ec1a7c.png)
+
+2. (Mendaftar sebagai administrator)
+
+![Screenshot 2023-04-20 201415](https://user-images.githubusercontent.com/94899238/234832953-cda21a15-2c81-456c-a9c7-ab718b6ce2a7.png)
+
+3. (Mengisi data untuk mendaftar sebagai administrator)
+
+![Screenshot 2023-04-20 201505](https://user-images.githubusercontent.com/94899238/234833025-5d27bcad-5993-4294-98a7-897507a5e885.png)
+
+4. (Mendaftar sebagai pengguna biasa)
+
+![Screenshot 2023-04-20 201625](https://user-images.githubusercontent.com/94899238/234833456-4c0aa496-0240-4629-b85c-c8df2687d8fa.png)
+
 **A. Menu pilihan sebagai admin**
+
+![Screenshot 2023-04-20 201711](https://user-images.githubusercontent.com/94899238/234834206-2b2b4fc5-bf6d-482e-8058-44622d1f22d6.png)
 
 Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa dan semua menu pilihan dapat disesuaikan dengan kebutuhan administrator, seperti:
 ##### Menampilkan jadwal, 
 * Jika admin memilih pilihan pertama, maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
+
+![Screenshot 2023-04-20 201802](https://user-images.githubusercontent.com/94899238/234834464-bbbc6fdf-6a67-47dc-a861-69541c2e07be.png)
+
 ##### Mengurutkan jadwal
 * Jika admin memilih pilihan kedua, maka program akan menampilkan pilihan pengurutan jadwal berdasarkan 1. Jam keberangkatan, 2. Tujuan keberangkatan, 3. Nomor kereta, dan 4. Jumlah penumpang. Dan semua itu dapat dipilih oleh admin dengan menyesuaikan keperluannya. Jika admin memasukkan pilihan selain angka 1,2,3, atau 4, program akan menampilkan pesan "Pilih dari pilihan yang tersedia, mohon coba lagi" dan meminta pengguna untuk memilih kembali hingga memasukkan pilihan yang ada.
+
+1. (Mengurutkan berdasarkan)
+
+![Screenshot 2023-04-20 201815](https://user-images.githubusercontent.com/94899238/234834789-cc2502d1-e42b-48e9-990c-c0c3d075eb03.png)
+
+2. (Misal berdasarkan jam keberangkatan)
+
+![Screenshot 2023-04-20 201833](https://user-images.githubusercontent.com/94899238/234835020-a0abe823-63d9-4470-9734-fb73c94fe107.png)
+
 ##### Mencari Tujuan
 * jika admin memilih piiihan ketiga, maka program akan meminta admin menginputkan jadwal keberangkatan kereta berdasarkan kota tujuan kereta tersebut. Jika pada jadwal keberangkatan kota yang dicari berada di jadwal, maka program akan menampilkan jadwal keberangkatan yang hanya bertujuan ke kota yang diinput atau dicari oleh admin. Dan jika kota atau tujuan yang dicari tidak ditemukan, maka program akan menampilkan pesan bahwa jadwal keberangkatan ke kota tersebut tidak ada, dan akan menyakan apakah admin ingin kembali ke menu pilihan lagi.
+
+![Screenshot 2023-04-20 201918](https://user-images.githubusercontent.com/94899238/234835685-65a23a0e-8ac4-405d-95a1-1127fdc0a8e6.png)
+
 ##### Menambahkan data jadwal dibagian awal
 * Jika admin memilih pilihan keempat, maka program akan menampilkan jadwal keberangkatan yang sudah ada dan menampilkan pesan bahwa jika admin menambahkan jadwal baru pada menu ini, maka jadwal tersebut akan ditambahkan di paling atas atau urutan pertama berdasarkan jadwal. Admin juga diminta untuk mengiiput data-data baru agar jadwal bisa dibuat, seperti Jam keberangkatan, Tujuan, Nomor kererta, dan Jumlah penumpang.
+
+![Screenshot 2023-04-20 202040](https://user-images.githubusercontent.com/94899238/234835806-0bb7c600-3d57-49a9-aa7f-3cfc05a26c16.png)
+
 ##### Menambahkan data jadwal dibagian akhir
-* Jika admin memilih pilihan kelima, maka program akan menampilkan jadwal keberangkatan yang sudah ada. Namun kebalikan dari pilhan sebelumnya, program akan menampilkan pesan bahwa jika admin menambahkan jadwal baru pada menu ini, maka jadwal tersebut akan ditambahkan di paling bawah atau urutan terakhir berdasarkan jadwal. Admin juga diminta untuk mengiiput data-data baru agar jadwal bisa dibuat, seperti Jam keberangkatan, Tujuan, Nomor kererta, dan Jumlah penumpang. 
+* Jika admin memilih pilihan kelima, maka program akan menampilkan jadwal keberangkatan yang sudah ada. Namun kebalikan dari pilhan sebelumnya, program akan menampilkan pesan bahwa jika admin menambahkan jadwal baru pada menu ini, maka jadwal tersebut akan ditambahkan di paling bawah atau urutan terakhir berdasarkan jadwal. Admin juga diminta untuk mengiiput data-data baru agar jadwal bisa dibuat, seperti Jam keberangkatan, Tujuan, Nomor kererta, dan Jumlah penumpang.
+
+![Screenshot 2023-04-20 202153](https://user-images.githubusercontent.com/94899238/234835865-2c7d3778-15a1-4f4a-a4a3-e9a70b3d430e.png)
+
 ##### Memperbarui data jadwal
 * Jika admin memilih pilihan keenam, maka program akan menampilkan daftar opsi untuk perbarui data yang terdiri dari jam keberangkatan, tujuan keberangkatan, nomor kereta, dan jumlah penumpang. Setelah admin memilih opsi yang diinginkan, program akan meminta input dari admin untuk memperbarui data yang dipilih. Jika admin memilih opsi "1", program akan menampilkan data keberangkatan dan meminta pengguna untuk memasukkan nomor urut data yang ingin diperbarui serta jam keberangkatan yang baru. Hal yang sama dilakukan jika pengguna memilih opsi "2", "3", atau "4" dengan input yang diminta berupa tujuan keberangkatan, nomor kereta, dan jumlah penumpang yang baru. Jika proses pembaruan berhasil dilakukan, program akan menampilkan data jadwal keberangkatan yang terbaru. Sebaliknya, jika terjadi kesalahan dalam proses input pada proses pembaruan data, maka program akan memberikan pesan kesalahan dan meminta admin untuk memasukkan input baru.
+
+1. (Memilih data apa yang ingin diperbaharui)
+
+![Screenshot 2023-04-20 202230](https://user-images.githubusercontent.com/94899238/234836131-3a340474-44aa-4e8c-abc0-5c7cf666a0a5.png)
+
+2. (Misalkan jam keberangkatan)
+
+![Screenshot 2023-04-20 202359](https://user-images.githubusercontent.com/94899238/234836300-1b04aebd-d93d-49fb-8597-ec961c0218aa.png)
+
 ##### Menghapus Data
 * Jika admin memilih pilihan ketujuh, maka program akan melakukan proses menghapus data jadwal keberangkatan dengan ketentuan, program akan meminta input dari admin untuk menentukan nomor urut data yang ingin dihapus. Jika data berhasil dihapus, program akan menampilkan pesan "Data telah dihapus" dan menampilkan ulang data jadwal keberangkatan yang ada. Namun, jika nomor urut yang dimasukkan tidak ditemukan, program akan menampilkan pesan "Nomor urut tidak ditemukan. Silahkan coba lagi" dan meminta admin untuk memasukkan nomor urut yang lain. 
+
+![Screenshot 2023-04-20 202436](https://user-images.githubusercontent.com/94899238/234836504-cf24f295-4e0d-40c1-9dea-e12d654cd6df.png)
+
 ##### Histori yang telah dilakukan oleh administrator
 * Jika admin memilih piihan kedelapan, maka program akan menampilkan riwayat perubahan data pada jadwal keberangkatan yang telah dilakukan oleh admin, selama data telah tersimpan dan dilakukan selama program berjalan.
+
+![Screenshot 2023-04-20 202502](https://user-images.githubusercontent.com/94899238/234836612-28ed3c4e-dea2-471d-a17b-20fc1358b257.png)
+
 ##### Keluar dari program.
 * Jika admin memilih pilihan kesembilan atau terakhir, maka program akan terhenti dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
 
 **B. Menu pilihan sebagai user biasa**
 
 Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, maka program akan menampilkan menu pilihan khusus user saja. Karena user biasa tidak akan mendapatkan akses yang lebih dibandingkan admin. Dan semua menu pilihan dapat disesuaikan dengan kebutuhan user, menu pilihan user berisikan:
+
+![Screenshot 2023-04-20 202607](https://user-images.githubusercontent.com/94899238/234837033-e5e2c8e9-209b-4890-a9c5-93fdd279a271.png)
+
 ##### Menampilkan jadwal keberangkatan kereta
 * Jika user memilih pilihan pertama, sama halnya dengan pilihan admin. Maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
+
+![Screenshot 2023-04-20 201802](https://user-images.githubusercontent.com/94899238/234834464-bbbc6fdf-6a67-47dc-a861-69541c2e07be.png)
+
 ##### Mengurutkan jadwal
 * Jika user memilih pilihan kedua, sama halnya dengan pilihan admin. Maka program akan menampilkan pilihan pengurutan jadwal berdasarkan 1. Jam keberangkatan, 2. Tujuan keberangkatan, 3. Nomor kereta, dan 4. Jumlah penumpang. Dan semua itu dapat dipilih oleh user agar dapat menyesuaikan dengan keperluannya. Jika user memasukkan pilihan selain angka 1,2,3, atau 4, program akan menampilkan pesan "Pilih dari pilihan yang tersedia, mohon coba lagi" dan meminta pengguna untuk memilih kembali hingga memasukkan pilihan yang ada.
+
+1. (Mengurut Berdasarkan)
+
+![Screenshot 2023-04-20 202622](https://user-images.githubusercontent.com/94899238/234838413-0cb0540a-0f86-4247-a3fc-788cc80549eb.png)
+
+2. (Misal berdasarkan Nomor kereta)
+
+![Screenshot 2023-04-20 202647](https://user-images.githubusercontent.com/94899238/234838701-bdeef812-5cc6-4bf9-a497-5f3230572ff9.png)
+
 ##### Mencari tujuan
 * jika user memilih piiihan ketiga, sama halnya dengan pilihan admin. Maka program akan meminta user menginputkan jadwal keberangkatan kereta berdasarkan kota tujuan kereta tersebut. Jika pada jadwal keberangkatan kota yang dicari berada di jadwal, maka program akan menampilkan jadwal keberangkatan yang hanya bertujuan ke kota yang diinput atau dicari oleh admin. Dan jika kota atau tujuan yang dicari tidak ditemukan, maka program akan menampilkan pesan bahwa jadwal keberangkatan ke kota tersebut tidak ada, dan akan menyakan apakah user tersebut ingin kembali ke menu pilihan lagi.
+
+![Screenshot 2023-04-20 202701](https://user-images.githubusercontent.com/94899238/234838822-39bc9716-0cc4-4d5c-87aa-7e2d89729e6b.png)
+
 ##### Keluar dari Program
 * Jika admin memilih pilihan kesembilan atau terakhir, maka program akan terhenti dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
