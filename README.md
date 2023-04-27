@@ -1,7 +1,7 @@
 # Dokumentasi Program
 
 ## Deskripsi Program
-* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap gerbong kereta api.
+* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap gerbong kereta api. Serta, program ini juga dapat diakses oleh 2 tipe pengguna, yaitu pengguna sebagai administrator stasiun dan sebagai pengguna umum. Dan masing-masing pengguna memiliki tampilan program " melihat jadwal keberangkatan Kereta" tersendiri yang sudah disesuaikan dengan keperluan dari pengguna tersebut.
 
 ## Struktur Project
 ### LINKEDLIST
@@ -207,7 +207,7 @@ Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberan
 ![Screenshot 2023-04-20 202502](https://user-images.githubusercontent.com/94899238/234836612-28ed3c4e-dea2-471d-a17b-20fc1358b257.png)
 
 ##### Keluar dari program.
-* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan terhenti dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
+* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
 
 **B. Menu pilihan sebagai user biasa**
 
@@ -237,4 +237,4 @@ Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, ma
 ![Screenshot 2023-04-20 202701](https://user-images.githubusercontent.com/94899238/234838822-39bc9716-0cc4-4d5c-87aa-7e2d89729e6b.png)
 
 ##### Keluar dari Program
-* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan terhenti dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
+* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
