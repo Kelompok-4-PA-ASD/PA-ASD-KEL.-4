@@ -209,6 +209,8 @@ Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberan
 ##### Keluar dari program.
 * Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
 
+![Screenshot 2023-04-20 202524](https://user-images.githubusercontent.com/94899238/234841696-f54a03d9-803f-47a7-8b05-ec69b32a14cf.png)
+
 **B. Menu pilihan sebagai user biasa**
 
 Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, maka program akan menampilkan menu pilihan khusus user saja. Karena user biasa tidak akan mendapatkan akses yang lebih dibandingkan admin. Dan semua menu pilihan dapat disesuaikan dengan kebutuhan user, menu pilihan user berisikan:
