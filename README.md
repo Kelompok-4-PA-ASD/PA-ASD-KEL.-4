@@ -1,7 +1,7 @@
 # Dokumentasi Program
 
 ## Deskripsi Program
-* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap gerbong kereta api. Serta, program ini juga dapat diakses oleh 2 tipe pengguna, yaitu pengguna sebagai administrator stasiun dan sebagai pengguna umum. Dan masing-masing pengguna memiliki tampilan program " melihat jadwal keberangkatan Kereta" tersendiri yang sudah disesuaikan dengan keperluan dari pengguna tersebut.
+* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Tugu. Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap gerbong kereta api. Serta, program ini juga dapat diakses oleh 2 tipe pengguna, yaitu pengguna sebagai administrator stasiun dan sebagai pengguna umum. Dan masing-masing pengguna memiliki tampilan program "melihat jadwal keberangkatan Kereta" tersendiri yang sudah disesuaikan dengan keperluan dari pengguna tersebut.
 
 ## Struktur Project
 ### LINKEDLIST
