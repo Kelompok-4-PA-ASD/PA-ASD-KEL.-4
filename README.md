@@ -107,7 +107,7 @@
 
 ![exit](https://user-images.githubusercontent.com/94899238/230804533-347eaf3c-e97a-4ea8-9734-0e5a254e5c0b.png)
 
-## Fitur dan Fungsionslitas:
+## Fitur dan Fungsionslitas
 * Pada awal program, terdapat fitur login yang dapat digunakan oleh admin dan juga pengunjung. Fitur login digunakan agar program dapat menentukan fitur yang harus ditampilkan. Dengan username dan PIN yang berbeda antara admin dan pengunjung, program dapat menentukan fitur yang harus ditampilkan sesuai dengan role-nya.
 
 #### Pada bagian admin, terdapat 9 fitur. 
@@ -128,7 +128,7 @@
 * Keempat, fitur keluar, digunakan oleh pengunjung untuk keluar dari program.
 
 
-## Cara Penggunaan Beserta Outputnya:
+## Cara Penggunaan Beserta Outputnya
 * Saat program dijalankan, maka program akan menampilkan menu untuk login berdasarkan pilihan 1, 2 dan 3 sebelum dilanjutkan menuju interface menu jadwal keberangkatan. Pilihan 1 dapat digunakan jika admin maupun user telah terdaftar sebagai akses masuk atau telah memiliki akun yang terdaftar. Lalu, pilihan 2 digunakan untuk mendaftar akun baru jika user belum mempunyai akun tersebut. Selanjutnya pilihan 3, pilihan ini digunakan jika pengguna ingin mengakhiri dan keluar dari program.
 
 ![Screenshot 2023-04-20 201151](https://user-images.githubusercontent.com/94899238/234831465-e589c392-ad2a-4551-82e4-195b5c7a35d3.png)
