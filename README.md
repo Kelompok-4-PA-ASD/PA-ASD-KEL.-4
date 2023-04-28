@@ -1,7 +1,7 @@
 # Dokumentasi Program
 
 ## Deskripsi Program
-* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Jakarta Kota (JAKK). Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga total penumpang yang dapat ditampung di setiap gerbong kereta api. Serta, program ini juga dapat diakses oleh 2 tipe pengguna, yaitu pengguna sebagai administrator stasiun dan sebagai pengguna umum. Dan masing-masing pengguna memiliki tampilan program "melihat jadwal keberangkatan Kereta" tersendiri yang sudah disesuaikan dengan keperluan dari pengguna tersebut.
+* Program "Jadwal Keberangkatan Kereta Api" adalah program yang digunakan untuk orang-orang yang ingin melihat jadwal keberangkatan Kereta Api di Stasiun Jakarta Kota (JAKK). Program ini memuat informasi tentang jam keberangkatan, kota tujuan, nomor kereta api, dan juga banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta. Serta, program ini juga dapat diakses oleh 2 tipe pengguna, yaitu pengguna sebagai administrator stasiun dan sebagai pengguna umum. Dan masing-masing pengguna memiliki tampilan program "melihat jadwal keberangkatan Kereta" tersendiri yang sudah disesuaikan dengan keperluan dari pengguna tersebut.
 
 ## Struktur Project
 ### LINKEDLIST
@@ -160,7 +160,7 @@
 ![Screenshot 2023-04-20 201711](https://user-images.githubusercontent.com/94899238/234834206-2b2b4fc5-bf6d-482e-8058-44622d1f22d6.png)
 
 Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberangkatan di stasiun, maka program akan menampilkan menu pilihan khusus admin. Yaitu admin mendapatkan akses yang lebih lengkap dibandingkan user biasa dan semua menu pilihan dapat disesuaikan dengan kebutuhan administrator, seperti:
-##### Menampilkan jadwal, 
+##### Menampilkan jadwal
 * Jika admin memilih pilihan pertama, maka program akan menampilkan jadwal keberangkatan kereta dengan informasi yang lengkap. Mulai dari Jam, Tujuan, Nomor kereta, serta banyaknya penumpang yang telah terdaftar di masing-masing gerbong kereta.
 
 ![Screenshot 2023-04-20 201802](https://user-images.githubusercontent.com/94899238/234834464-bbbc6fdf-6a67-47dc-a861-69541c2e07be.png)
