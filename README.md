@@ -207,7 +207,7 @@ Jika pengguna berhasil login dan terdeteksi sebagai administrator jadwal keberan
 ![Screenshot 2023-04-20 202502](https://user-images.githubusercontent.com/94899238/234836612-28ed3c4e-dea2-471d-a17b-20fc1358b257.png)
 
 ##### Keluar dari program.
-* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
+* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih".
 
 ![Screenshot 2023-04-20 202524](https://user-images.githubusercontent.com/94899238/234841696-f54a03d9-803f-47a7-8b05-ec69b32a14cf.png)
 
@@ -239,4 +239,5 @@ Jika pengguna berhasil login dan terdeteksi sebagai pengguna atau user biasa, ma
 ![Screenshot 2023-04-20 202701](https://user-images.githubusercontent.com/94899238/234838822-39bc9716-0cc4-4d5c-87aa-7e2d89729e6b.png)
 
 ##### Keluar dari Program
-* Jika admin memilih pilihan kesembilan atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih" kepada admin maupun user biasa.
+* Jika admin memilih pilihan keempat atau terakhir, maka program akan berhenti (keluar program) dan menampilkan pesan "Terima Kasih".
+![image](https://user-images.githubusercontent.com/72842139/235140022-b2ffd66b-c868-4918-ba5e-58ed33028bc6.png)
